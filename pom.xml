@@ -110,6 +110,7 @@
 				<version>2.19.1</version>
 			</plugin>
 		</plugins>
+		<finalName>lake-side-hotel</finalName>
 	</build>
 
 </project>
