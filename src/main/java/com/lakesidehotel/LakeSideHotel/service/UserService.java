@@ -50,4 +50,12 @@ public class UserService implements IUserService{
         return userRepository.findByEmail(email)
                 .orElseThrow(()->new UsernameNotFoundException("User not found"));
     }
+
+    @Override
+    public String loginAccount(String email, String password) {
+        User user = getUser(email);
+        if(passwordEncoder.encode(password).equals(user.getPassword()))
+            return "Login successful!";
+        return "Login failed!";
+    }
 }

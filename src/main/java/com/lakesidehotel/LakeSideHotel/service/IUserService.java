@@ -9,4 +9,5 @@ public interface IUserService {
     List<User> getUsers();
     void deleteUser(String email);
     User getUser(String email);
+    String loginAccount(String email, String password);
 }
