@@ -29,7 +29,7 @@ import java.util.Optional;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/rooms")
-@CrossOrigin(origins = "*") //cors fixed
+//@CrossOrigin(origins = "*") //cors fixed
 public class RoomController {
     private final IRoomService roomService;
     private final BookingService bookingService;

@@ -21,7 +21,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/bookings")
-@CrossOrigin(origins = "*") //cors fixed
+//@CrossOrigin(origins = "*") //cors fixed
 public class BookingController {
     private final IBookingService bookingService;
     private final IRoomService roomService;
